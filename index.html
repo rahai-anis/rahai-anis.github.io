@@ -121,53 +121,59 @@
 					<p>Passionate about leveraging technology to solve complex problems and drive innovation</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+			<div class="timeline">
+				<!-- Item 1 -->
+
+				<div class="timeline-item left ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2018-2023</span>
-						<h2>Master Degree in information systems and software engineering</h2>
+						<h2>Master Degree in Information Systems & Software Engineering</h2>
 						<span class="position">Boumerdes University</span>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+
+				<!-- Item 2 -->
+				<div class="timeline-item right ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2023-2024</span>
 						<h2>Charged in Programation</h2>
 						<span class="position">Algerian National Institute of Industrial Property</span>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+				<!-- Item 3 -->
+				<div class="timeline-item left ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2020-2021</span>
 						<h2>Intern</h2>
-						<span class="position">National pension fund</span>
+						<span class="position">National Pension Fund</span>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+
+				<!-- Item 4 -->
+				<div class="timeline-item right ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2024-Present</span>
 						<h2>Full Stack Engineer</h2>
 						<span class="position">Exatechnologie</span>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+				<!-- Item 5 -->
+				<div class="timeline-item left ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2024-2025</span>
 						<h2>Consultant Web</h2>
-						<span class="position">Algerian tech makers</span>
+						<span class="position">Algerian Tech Makers</span>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
+
+				<!-- Item 6 -->
+				<div class="timeline-item right ftco-animate">
+					<div class="timeline-content">
 						<span class="date">2025-Present</span>
-						<h2>Integrator and senior developer</h2>
-						<span class="position">Algerian port community system</span>
+						<h2>Integrator and Senior Developer</h2>
+						<span class="position">Algerian Port Community System</span>
 					</div>
 				</div>
 			</div>
@@ -942,7 +948,7 @@
 			/* blue border */
 			display: inline-block;
 			position: relative;
-		
+
 			background-repeat: no-repeat;
 			-webkit-background-clip: text;
 			background-clip: text;
@@ -1028,6 +1034,154 @@
 
 			50% {
 				transform: translateY(-30px);
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+		.timeline {
+			position: relative;
+			max-width: 900px;
+			margin: auto;
+			padding: 40px 0;
+		}
+
+		/* The vertical line */
+		.timeline::after {
+			content: "";
+			position: absolute;
+			width: 4px;
+			background: #ffbd39;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -2px;
+		}
+
+		/* Timeline items */
+		.timeline-item {
+			padding: 20px 40px;
+			position: relative;
+			width: 50%;
+		}
+
+		.timeline-item.left {
+			left: 0;
+		}
+
+		.timeline-item.right {
+			left: 50%;
+		}
+
+		/* Circles on the line */
+		.timeline-item::before {
+			content: "";
+			position: absolute;
+			top: 20px;
+			right: -12px;
+			width: 20px;
+			height: 20px;
+			background: var(--white);
+			border: 4px solid #ffbd39;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		.timeline-item.right::before {
+			left: -12px;
+		}
+
+		/* Card content */
+		.timeline-content {
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px var(--yellow);
+
+			animation: flutter 3s ease-in-out infinite;
+			/* 👈 apply waving animation */
+
+			/* pivot like a flag */
+		}
+
+		.timeline-item.left .timeline-content {
+			transform-origin: right center;
+		}
+
+		/* Right-side items → fix left edge */
+		.timeline-item.right .timeline-content {
+			transform-origin: left center;
+		}
+		.timeline-item:nth-child(1) .timeline-content { animation-delay: 0s; }
+.timeline-item:nth-child(2) .timeline-content { animation-delay: 1.2s; }
+.timeline-item:nth-child(3) .timeline-content { animation-delay: 0.7s; }
+.timeline-item:nth-child(4) .timeline-content { animation-delay: 2.1s; }
+.timeline-item:nth-child(5) .timeline-content { animation-delay: 0.4s; }
+.timeline-item:nth-child(6) .timeline-content { animation-delay: 1.8s; }
+
+		.timeline-content .date {
+			font-weight: bold;
+			color: var(--yellow);
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.timeline-content h2 {
+			margin-bottom: 5px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.timeline-content .position {
+			font-size: 14px;
+			color: var(--secondary);
+		}
+
+
+
+		.timeline-item::after {
+			content: "";
+			position: absolute;
+			top: 28px;
+			/* align with circle center */
+			width: 60px;
+			/* adjust length */
+			border-top: 2px dashed var(--yellow);
+		}
+
+		.timeline-item.left::after {
+			right: 8px;
+		}
+
+		.timeline-item.right::after {
+			left: 8px;
+		}
+
+		@keyframes flutter {
+			0% {
+				transform: rotate(0deg) skewY(0deg);
+			}
+
+			25% {
+				transform: rotate(1deg) skewY(1deg);
+			}
+
+			50% {
+				transform: rotate(0deg) skewY(-1deg);
+			}
+
+			75% {
+				transform: rotate(-1deg) skewY(1deg);
+			}
+
+			100% {
+				transform: rotate(0deg) skewY(0deg);
 			}
 		}
 	</style>
