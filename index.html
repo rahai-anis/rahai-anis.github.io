@@ -49,35 +49,28 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/laptop.png); background-size: contain;  ">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Rahai Anis</span></h1>
-								<h2 class="mb-4">A Software Engineer</h2>
-								<p><a href="resume.pdf" class="btn btn-primary py-3 px-4">Download cv</a> <a
-										href="#skills-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										skills</a></p>
-							</div>
-						</div>
-					</div>
+	<section id="home-section" class="ftco-section ftco-no-pb hero-section">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Hello</h1>
+					<h2 class="mb-4">Hello!</h2>
+					<h3 class="mb-4">
+						I'm <span class="animated-name">Rahai Mohamed Anis</span>
+					</h3>
+					<h4 class="mb-4 typewriter">A Software Engineer | Full Stack Developer</h4>
+					<p>
+						<a href="resume.pdf" class="btn btn-primary py-3 px-4">Download CV</a>
+						<a href="#skills-section" class="btn btn-outline-dark py-3 px-4">My Skills</a>
+					</p>
 				</div>
+
 			</div>
-
-
 		</div>
 	</section>
+
+
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
@@ -433,7 +426,7 @@
 						onclick="openModal();currentSlide(15)" class="hover-shadow cursor"></div>
 				<div class="column"><img src="images/gameapp2.png" style="width:100%"
 						onclick="openModal();currentSlide(16)" class="hover-shadow cursor"></div>
-				
+
 			</div>
 
 			<div id="myModal" class="modal">
@@ -489,7 +482,7 @@
 					<div class="mySlides">
 						<div class="numbertext">16 / 16</div><img src="images/gameapp2.png" style="width:100%">
 					</div>
-					
+
 
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -533,7 +526,7 @@
 								onclick="currentSlide(15)"></div>
 						<div class="column"><img class="demo cursor" src="images/gameapp2.png" style="width:100%"
 								onclick="currentSlide(16)"></div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -911,6 +904,133 @@
 			captionText.innerHTML = dots[slideIndex - 1].alt;
 		}
 	</script>
+	<style>
+		.hero-section {
+
+			align-items: center;
+			justify-content: center;
+			/*  background: linear-gradient(180deg, var(--yellow), var(--dark) 50%, #000 100%);*/
+			color: var(--white);
+			overflow: hidden;
+		}
+
+		/* Overlay for better contrast */
+		.hero-section .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+
+		.hero-section .heading-section {
+			position: relative;
+			z-index: 2;
+		}
+
+		/* Animated highlight (your primary blue) */
+
+		.animated-name {
+			font-size: 3rem;
+			/* bigger size */
+			font-weight: 800;
+			color: transparent;
+			/* fill empty */
+			-webkit-text-stroke: 1px #ffbd39;
+			/* blue border */
+			display: inline-block;
+			position: relative;
+		
+			background-repeat: no-repeat;
+			-webkit-background-clip: text;
+			background-clip: text;
+			animation: stroke-draw 10s linear infinite;
+		}
+
+		@keyframes stroke-draw {
+			0% {
+				background-size: 0% 100%;
+			}
+
+			50% {
+				background-size: 100% 100%;
+			}
+
+			100% {
+				background-size: 0% 100%;
+			}
+		}
+
+		/* Typewriter animation */
+		.typewriter {
+			overflow: hidden;
+			border-right: 2px solid var(--white);
+			white-space: nowrap;
+			animation: typing 4s steps(30, end), blink 0.8s infinite;
+			display: inline-block;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes blink {
+
+			0%,
+			100% {
+				border-color: transparent;
+			}
+
+			50% {
+				border-color: var(--white);
+			}
+		}
+
+		/* Floating subtle background shapes */
+		.hero-section::before,
+		.hero-section::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.05);
+			animation: float 12s infinite ease-in-out;
+			z-index: 0;
+		}
+
+		.hero-section::before {
+			width: 200px;
+			height: 200px;
+			top: 10%;
+			left: -50px;
+		}
+
+		.hero-section::after {
+			width: 300px;
+			height: 300px;
+			bottom: -100px;
+			right: -100px;
+		}
+
+		@keyframes float {
+
+			0%,
+			100% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-30px);
+			}
+		}
+	</style>
 </body>
 
 </html>
