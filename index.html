@@ -398,146 +398,81 @@
 				</div>
 			</div>
 
-			<div class="row mediaa">
-				<!-- Each image corresponds to its correct slide number -->
-				<div class="column"><img src="images/inapi1.png" style="width:100%"
-						onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/inapi3.png" style="width:100%"
-						onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/inapi4.png" style="width:100%"
-						onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/ip-collab.png" style="width:100%"
-						onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/ipcollab2.png" style="width:100%"
-						onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/ipcollab3.png" style="width:100%"
-						onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/hattaa.png" style="width:100%"
-						onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/hattaa2.png" style="width:100%"
-						onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/hattaa3.png" style="width:100%"
-						onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/barreau1.png" style="width:100%"
-						onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/barreau2.png" style="width:100%"
-						onclick="openModal();currentSlide(11)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/inifinimed.png" style="width:100%"
-						onclick="openModal();currentSlide(12)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/kachma.png" style="width:100%"
-						onclick="openModal();currentSlide(13)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/kachma2.png" style="width:100%"
-						onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/gameapp1.png" style="width:100%"
-						onclick="openModal();currentSlide(15)" class="hover-shadow cursor"></div>
-				<div class="column"><img src="images/gameapp2.png" style="width:100%"
-						onclick="openModal();currentSlide(16)" class="hover-shadow cursor"></div>
+			<div class="projects-grid">
+				<!-- Project cards -->
+				<div class="project-card" onclick="openProject(1)">
+					<img src="images/inapi1.png" alt="INAPI Project">
+					<div class="project-info">
+						<h3>INAPI Platform</h3>
+						<p>Internal management system for patent and trademark submissions at INAPI.</p>
+					</div>
+				</div>
 
+				<div class="project-card" onclick="openProject(2)">
+					<img src="images/ip-collab.png" alt="IP Collaboration">
+					<div class="project-info">
+						<h3>IP Collaboration</h3>
+						<p>Web app for real-time collaboration between intellectual property experts.</p>
+					</div>
+				</div>
+
+				<div class="project-card" onclick="openProject(3)">
+					<img src="images/hattaa.png" alt="Hattaa Platform">
+					<div class="project-info">
+						<h3>Hattaa E-commerce</h3>
+						<p>Multi-vendor online store specialized in bulk and lot product sales.</p>
+					</div>
+				</div>
+
+				<div class="project-card" onclick="openProject(4)">
+					<img src="images/barreau1.png" alt="Barreau Portal">
+					<div class="project-info">
+						<h3>Barreau Portal</h3>
+						<p>Platform for lawyers to manage cases, clients, and online appointments.</p>
+					</div>
+				</div>
+
+				<div class="project-card" onclick="openProject(5)">
+					<img src="images/inifinimed.png" alt="Inifinimed">
+					<div class="project-info">
+						<h3>Inifinimed</h3>
+						<p>Medical website with appointment booking and digital prescription features.</p>
+					</div>
+				</div>
+
+				<div class="project-card" onclick="openProject(6)">
+					<img src="images/kachma.png" alt="Kachma">
+					<div class="project-info">
+						<h3>Kachma App</h3>
+						<p>Local marketplace application for small shops and home-based sellers.</p>
+					</div>
+				</div>
+
+				<div class="project-card" onclick="openProject(7)">
+					<img src="images/gameapp1.png" alt="GameApp">
+					<div class="project-info">
+						<h3>GameApp</h3>
+						<p>Interactive quiz and challenge game built with modern UI and animations.</p>
+					</div>
+				</div>
 			</div>
-
-			<div id="myModal" class="modal">
-				<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="projectModal" class="modal">
+				<span class="close" onclick="closeProject()">&times;</span>
 				<div class="modal-content">
-
-					<!-- 17 slides with correct numbers -->
-					<div class="mySlides">
-						<div class="numbertext">1 / 16</div><img src="images/inapi1.png" style="width:100%">
+					<div class="modal-header">
+						<h2 id="modalTitle"></h2>
 					</div>
-					<div class="mySlides">
-						<div class="numbertext">2 / 16</div><img src="images/inapi3.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">3 / 16</div><img src="images/inapi4.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">4 / 16</div><img src="images/ip-collab.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">5 / 16</div><img src="images/ipcollab2.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">6 / 16</div><img src="images/ipcollab3.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">7 / 16</div><img src="images/hattaa.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">8 / 16</div><img src="images/hattaa2.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">9 / 16</div><img src="images/hattaa3.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">10 / 16</div><img src="images/barreau1.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">11 / 16</div><img src="images/barreau2.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">12 / 16</div><img src="images/inifinimed.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">13 / 16</div><img src="images/kachma.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">14 / 16</div><img src="images/kachma2.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">15 / 16</div><img src="images/gameapp1.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">16 / 16</div><img src="images/gameapp2.png" style="width:100%">
-					</div>
-
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-					<div class="caption-container">
-						<p id="caption"></p>
-					</div>
-
-					<!-- Thumbnails -->
-					<div class="columns" style="display: flex; flex-wrap: wrap;">
-						<!-- Repeat all 17 thumbnails with correct numbers -->
-						<div class="column"><img class="demo cursor" src="images/inapi1.png" style="width:100%"
-								onclick="currentSlide(1)"></div>
-						<div class="column"><img class="demo cursor" src="images/inapi3.png" style="width:100%"
-								onclick="currentSlide(2)"></div>
-						<div class="column"><img class="demo cursor" src="images/inapi4.png" style="width:100%"
-								onclick="currentSlide(3)"></div>
-						<div class="column"><img class="demo cursor" src="images/ip-collab.png" style="width:100%"
-								onclick="currentSlide(4)"></div>
-						<div class="column"><img class="demo cursor" src="images/ipcollab2.png" style="width:100%"
-								onclick="currentSlide(5)"></div>
-						<div class="column"><img class="demo cursor" src="images/ipcollab3.png" style="width:100%"
-								onclick="currentSlide(6)"></div>
-						<div class="column"><img class="demo cursor" src="images/hattaa.png" style="width:100%"
-								onclick="currentSlide(7)"></div>
-						<div class="column"><img class="demo cursor" src="images/hattaa2.png" style="width:100%"
-								onclick="currentSlide(8)"></div>
-						<div class="column"><img class="demo cursor" src="images/hattaa3.png" style="width:100%"
-								onclick="currentSlide(9)"></div>
-						<div class="column"><img class="demo cursor" src="images/barreau1.png" style="width:100%"
-								onclick="currentSlide(10)"></div>
-						<div class="column"><img class="demo cursor" src="images/barreau2.png" style="width:100%"
-								onclick="currentSlide(11)"></div>
-						<div class="column"><img class="demo cursor" src="images/inifinimed.png" style="width:100%"
-								onclick="currentSlide(12)"></div>
-						<div class="column"><img class="demo cursor" src="images/kachma.png" style="width:100%"
-								onclick="currentSlide(13)"></div>
-						<div class="column"><img class="demo cursor" src="images/kachma2.png" style="width:100%"
-								onclick="currentSlide(14)"></div>
-						<div class="column"><img class="demo cursor" src="images/gameapp1.png" style="width:100%"
-								onclick="currentSlide(15)"></div>
-						<div class="column"><img class="demo cursor" src="images/gameapp2.png" style="width:100%"
-								onclick="currentSlide(16)"></div>
-
+					<div class="modal-body">
+						<div class="carousel">
+							<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+							<img id="modalImage" src="" alt="Project image">
+							<a class="next" onclick="changeSlide(1)">&#10095;</a>
+						</div>
+						<p id="modalDescription"></p>
 					</div>
 				</div>
 			</div>
 
-		</div>
 	</section>
 
 
@@ -728,188 +663,224 @@
 			box-sizing: border-box;
 		}
 
-		.row>.column {
-			padding: 0 8px;
-			margin-top: 5px;
+		.projects-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 30px;
 		}
 
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
+		.project-card {
+			background: #1a1a1a;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
 		}
 
-		.column {
-			float: left;
-			width: 25%;
+		.project-card:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 8px 16px rgba(255, 189, 57, 0.4);
 		}
 
-		/* The Modal (background) */
+		.project-card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+
+		.project-info {
+			padding: 15px;
+			text-align: center;
+		}
+
+		.project-info h3 {
+			color: var(--yellow, #ffbd39);
+			margin-bottom: 10px;
+		}
+
+		.project-info p {
+			color: #ccc;
+			font-size: 0.95rem;
+		}
+
+		/* Modal styling */
 		.modal {
 			display: none;
 			position: fixed;
-			z-index: 1;
-			padding-top: 100px;
+			z-index: 9999;
+			padding-top: 80px;
 			left: 0;
 			top: 0;
 			width: 100%;
 			height: 100%;
 			overflow: auto;
-			background-color: black;
-			z-index: 10;
+			background-color: rgba(0, 0, 0, 0.9);
 		}
 
-		/* Modal Content */
 		.modal-content {
-			position: relative;
-			background-color: #fefefe;
 			margin: auto;
-			padding: 0;
+			background: #111;
+			padding: 20px;
 			width: 90%;
-			max-width: 1200px;
+			max-width: 800px;
+			border-radius: 10px;
+			color: #fff;
+			animation: fadeIn 0.4s ease;
 		}
 
-		/* The Close Button */
-		.close {
-			color: white;
-			position: absolute;
-			top: 10px;
-			right: 25px;
-			font-size: 35px;
-			font-weight: bold;
-
+		.modal-header {
+			text-align: center;
+			margin-bottom: 20px;
 		}
 
-		.close:hover,
-		.close:focus {
-			color: #999;
-			text-decoration: none;
-			cursor: pointer;
+		.modal-header h2 {
+			color: var(--yellow, #ffbd39);
 		}
 
-		.mySlides {
-			display: none;
+		.carousel {
+			position: relative;
+			text-align: center;
 		}
 
-		.cursor {
-			cursor: pointer;
+		.carousel img {
+			width: 100%;
+			border-radius: 10px;
+			transition: opacity 0.4s ease;
 		}
 
-		/* Next & previous buttons */
 		.prev,
 		.next {
 			cursor: pointer;
 			position: absolute;
 			top: 50%;
-			width: auto;
-			padding: 16px;
-			margin-top: -50px;
-			color: white;
+			transform: translateY(-50%);
+			color: var(--yellow, #ffbd39);
+			font-size: 32px;
 			font-weight: bold;
-			font-size: 20px;
-			transition: 0.6s ease;
-			border-radius: 0 3px 3px 0;
+			padding: 10px;
 			user-select: none;
-			-webkit-user-select: none;
 		}
 
-		/* Position the "next button" to the right */
-		.next {
-			right: 0;
-			border-radius: 3px 0 0 3px;
-		}
-
-		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover,
 		.next:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
-
-		/* Number text (1/3 etc) */
-		.numbertext {
-			color: #f2f2f2;
-			font-size: 12px;
-			padding: 8px 12px;
-			position: absolute;
-			top: 0;
-		}
-
-		img {
-			margin-bottom: -4px;
-		}
-
-		.caption-container {
-			text-align: center;
-			background-color: black;
-			padding: 2px 16px;
 			color: white;
 		}
 
-		.demo {
-			opacity: 0.6;
+		.prev {
+			left: 10px;
 		}
 
-		.active,
-		.demo:hover {
-			opacity: 1;
+		.next {
+			right: 10px;
 		}
 
-		img.hover-shadow {
-			transition: 0.3s;
+
+		.close {
+			position: absolute;
+			top: 40px;
+			right: 60px;
+			color: #fff;
+			font-size: 36px;
+			font-weight: bold;
+			cursor: pointer;
 		}
 
-		.hover-shadow:hover {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		.close:hover {
+			color: var(--yellow, #ffbd39);
 		}
 
-		@media only screen and (max-width: 600px) {
-			.mediaa {
-				flex-direction: column;
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+				transform: scale(0.95);
 			}
 
-			.column {
-				width: 100%;
+			to {
+				opacity: 1;
+				transform: scale(1);
 			}
 		}
 	</style>
 	<script>
-		function openModal() {
-			document.getElementById("myModal").style.display = "block";
-		}
+  const projects = [
+    {
+      title: "INAPI Platform",
+      description:
+        "A complete system for managing patent and trademark submissions. Built with Laravel & Vue.js to handle data securely and efficiently.",
+      images: ["images/inapi1.png", "images/inapi3.png", "images/inapi4.png"]
+    },
+    {
+      title: "IP Collaboration",
+      description:
+        "Collaborative workspace for IP specialists allowing real-time document sharing and project tracking.",
+      images: ["images/ip-collab.png", "images/ipcollab2.png", "images/ipcollab3.png"]
+    },
+    {
+      title: "Hattaa E-commerce",
+      description:
+        "A robust e-commerce platform focused on bulk product lots, featuring seller dashboards, invoices, and order management.",
+      images: ["images/hattaa.png", "images/hattaa2.png", "images/hattaa3.png"]
+    },
+    {
+      title: "Barreau Portal",
+      description:
+        "Professional management portal for lawyers to track their cases, schedule meetings, and interact securely with clients.",
+      images: ["images/barreau1.png", "images/barreau2.png"]
+    },
+    {
+      title: "Inifinimed",
+      description:
+        "Digital health platform with doctor directories, online consultations, and appointment scheduling.",
+      images: ["images/inifinimed.png"]
+    },
+    {
+      title: "Kachma App",
+      description:
+        "A mobile-friendly platform connecting small sellers and buyers locally, with a focus on Algerian markets.",
+      images: ["images/kachma.png", "images/kachma2.png"]
+    },
+    {
+      title: "GameApp",
+      description:
+        "A fun and engaging quiz game featuring levels, score tracking, and animated UI built with React.",
+      images: ["images/gameapp1.png", "images/gameapp2.png"]
+    }
+  ];
 
-		function closeModal() {
-			document.getElementById("myModal").style.display = "none";
-		}
+  let currentProjectIndex = 0;
+  let currentSlideIndex = 0;
 
-		var slideIndex = 1;
-		showSlides(slideIndex);
+  function openProject(index) {
+    currentProjectIndex = index - 1;
+    currentSlideIndex = 0;
 
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
+    const project = projects[currentProjectIndex];
+    document.getElementById("modalTitle").innerText = project.title;
+    document.getElementById("modalDescription").innerText = project.description;
+    document.getElementById("modalImage").src = project.images[currentSlideIndex];
+    document.getElementById("projectModal").style.display = "block";
+  }
 
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
+  function closeProject() {
+    document.getElementById("projectModal").style.display = "none";
+  }
 
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("demo");
-			var captionText = document.getElementById("caption");
-			if (n > slides.length) { slideIndex = 1 }
-			if (n < 1) { slideIndex = slides.length }
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
-			captionText.innerHTML = dots[slideIndex - 1].alt;
-		}
-	</script>
+  function changeSlide(direction) {
+    const project = projects[currentProjectIndex];
+    currentSlideIndex += direction;
+
+    if (currentSlideIndex >= project.images.length) currentSlideIndex = 0;
+    if (currentSlideIndex < 0) currentSlideIndex = project.images.length - 1;
+
+    const image = document.getElementById("modalImage");
+    image.style.opacity = 0;
+    setTimeout(() => {
+      image.src = project.images[currentSlideIndex];
+      image.style.opacity = 1;
+    }, 200);
+  }
+</script>
+
 	<style>
 		.hero-section {
 
@@ -1118,12 +1089,30 @@
 		.timeline-item.right .timeline-content {
 			transform-origin: left center;
 		}
-		.timeline-item:nth-child(1) .timeline-content { animation-delay: 0s; }
-.timeline-item:nth-child(2) .timeline-content { animation-delay: 1.2s; }
-.timeline-item:nth-child(3) .timeline-content { animation-delay: 0.7s; }
-.timeline-item:nth-child(4) .timeline-content { animation-delay: 2.1s; }
-.timeline-item:nth-child(5) .timeline-content { animation-delay: 0.4s; }
-.timeline-item:nth-child(6) .timeline-content { animation-delay: 1.8s; }
+
+		.timeline-item:nth-child(1) .timeline-content {
+			animation-delay: 0s;
+		}
+
+		.timeline-item:nth-child(2) .timeline-content {
+			animation-delay: 1.2s;
+		}
+
+		.timeline-item:nth-child(3) .timeline-content {
+			animation-delay: 0.7s;
+		}
+
+		.timeline-item:nth-child(4) .timeline-content {
+			animation-delay: 2.1s;
+		}
+
+		.timeline-item:nth-child(5) .timeline-content {
+			animation-delay: 0.4s;
+		}
+
+		.timeline-item:nth-child(6) .timeline-content {
+			animation-delay: 1.8s;
+		}
 
 		.timeline-content .date {
 			font-weight: bold;
