@@ -11,6 +11,8 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 	<script src="lightbox2-2.11.4/dist/js/lightbox.js"></script>
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -108,7 +110,7 @@
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
 
-							<p><a href="resume.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+							<p><a href="#contact-section" class="btn btn-primary py-3 px-3">Contact Me </a></p>
 						</div>
 					</div>
 				</div>
@@ -336,6 +338,17 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="progress-wrap ftco-animate">
+						<h3>Typescript</h3>
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
 						<h3>Angular</h3>
 						<div class="progress">
 							<div class="progress-bar color-3" role="progressbar" aria-valuenow="85" aria-valuemin="0"
@@ -404,8 +417,8 @@
 					<div class="progress-wrap ftco-animate">
 						<h3>Git</h3>
 						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
 								<span>90%</span>
 							</div>
 						</div>
@@ -419,6 +432,28 @@
 							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
 								aria-valuemax="100" style="width:80%">
 								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Docker</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Kafka</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
 							</div>
 						</div>
 					</div>
@@ -438,64 +473,145 @@
 				</div>
 			</div>
 
-			<div class="projects-grid">
-				<!-- Project cards -->
-				<div class="project-card" onclick="openProject(1)">
-					<img src="images/inapi1.png" alt="INAPI Project">
-					<div class="project-info">
-						<h3>INAPI Platform</h3>
-						<p>official gateway for patent and trademark submissions at INAPI.</p>
-					</div>
-				</div>
+	<div class="projects-grid">
+  <!-- INAPI -->
+  <div class="project-card" onclick="openProject(1)">
+    <img src="images/inapi1.png" alt="INAPI Project">
+    <div class="project-info">
+      <h3>INAPI Platform</h3>
+      <p>Official gateway for patent and trademark submissions at INAPI.</p>
+      <div class="stack-icons">
+        <i class="devicon-laravel-plain colored"></i>
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(2)">
-					<img src="images/ip-collab.png" alt="IP Collaboration">
-					<div class="project-info">
-						<h3>IP Collaboration</h3>
-						<p>Web app for real-time collaboration between 22 arab country in intellectual property.</p>
-					</div>
-				</div>
+  <!-- Port Management System -->
+  <div class="project-card" onclick="openProject(10)">
+    <img src="images/pms.png" alt="Port Management System">
+    <div class="project-info">
+      <h3>Port Management System</h3>
+      <p>Solution built to manage all port operations.</p>
+      <div class="stack-icons">
+        <i class="devicon-spring-plain colored"></i>
+        <i class="devicon-angular-plain colored"></i>
+        <i class="devicon-postgresql-plain "></i>
+        <i class="devicon-apachekafka-original "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(3)">
-					<img src="images/hattaa.png" alt="Hattaa Platform">
-					<div class="project-info">
-						<h3>Hattaa E-commerce</h3>
-						<p>Multi-vendor online store specialized in bulk and lot product sales.</p>
-					</div>
-				</div>
+  <!-- Barreau Portal -->
+  <div class="project-card" onclick="openProject(4)">
+    <img src="images/barreau1.png" alt="Barreau Portal">
+    <div class="project-info">
+      <h3>Barreau Portal</h3>
+      <p>Platform for lawyers to manage cases, clients, and online appointments.</p>
+      <div class="stack-icons">
+        <i class="devicon-laravel-plain colored"></i>
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(4)">
-					<img src="images/barreau1.png" alt="Barreau Portal">
-					<div class="project-info">
-						<h3>Barreau Portal</h3>
-						<p>Platform for lawyers to manage cases, clients, and online appointments.</p>
-					</div>
-				</div>
+  <!-- IP Collaboration -->
+  <div class="project-card" onclick="openProject(2)">
+    <img src="images/ip-collab.png" alt="IP Collaboration">
+    <div class="project-info">
+      <h3>IP Collaboration</h3>
+      <p>Web app for real-time collaboration between 22 Arab countries in intellectual property.</p>
+      <div class="stack-icons">
+        <i class="devicon-laravel-plain colored"></i>
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(5)">
-					<img src="images/inifinimed.png" alt="Inifinimed">
-					<div class="project-info">
-						<h3>Inifinimed</h3>
-						<p>Medical website with appointment booking and sale of medical product</p>
-					</div>
-				</div>
+  <!-- Management Projects Innovation -->
+  <div class="project-card" onclick="openProject(8)">
+    <img src="images/mpi_1.png" alt="Management Projects Innovation">
+    <div class="project-info">
+      <h3>Management Projects Innovation</h3>
+      <p>Agency website to manage events.</p>
+      <div class="stack-icons">
+        <i class="devicon-wordpress-plain "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(6)">
-					<img src="images/kachma.png" alt="Kachma">
-					<div class="project-info">
-						<h3>Kachma App</h3>
-						<p>platform  to simplify finding an artisan.</p>
-					</div>
-				</div>
+  <!-- ERP -->
+  <div class="project-card" onclick="openProject(9)">
+    <img src="images/intranet_1.png" alt="ERP">
+    <div class="project-info">
+      <h3>Entreprise Resource Planning</h3>
+      <p>A local ERP to manage internal company operations.</p>
+      <div class="stack-icons">
+        <i class="devicon-laravel-plain colored"></i>
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
 
-				<div class="project-card" onclick="openProject(7)">
-					<img src="images/gameapp1.png" alt="GameApp">
-					<div class="project-info">
-						<h3>GameApp</h3>
-						<p>Interactive quiz and challenge game built with modern UI and animations.</p>
-					</div>
-				</div>
-			</div>
+  <!-- Hattaa E-commerce -->
+  <div class="project-card" onclick="openProject(3)">
+    <img src="images/hattaa.png" alt="Hattaa Platform">
+    <div class="project-info">
+      <h3>Hattaa E-commerce</h3>
+      <p>Multi-vendor online store specialized in bulk and lot product sales.</p>
+      <div class="stack-icons">
+        <i class="devicon-symfony-original "></i>
+        <i class="devicon-mysql-plain "></i>
+        <i class="devicon-prestashop-original "></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Infinimed -->
+  <div class="project-card" onclick="openProject(5)">
+    <img src="images/inifinimed.png" alt="Infinimed">
+    <div class="project-info">
+      <h3>Infinimed</h3>
+      <p>Medical website with appointment booking and sale of medical products.</p>
+      <div class="stack-icons">
+        <i class="devicon-prestashop-original "></i>
+        <i class="devicon-symfony-original "></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kachma -->
+  <div class="project-card" onclick="openProject(6)">
+    <img src="images/kachma.png" alt="Kachma">
+    <div class="project-info">
+      <h3>Kachma Website</h3>
+      <p>Platform to simplify finding an artisan.</p>
+      <div class="stack-icons">
+        <i class="devicon-laravel-plain colored"></i>
+        <i class="devicon-mysql-plain "></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- GameApp 
+  <div class="project-card" onclick="openProject(7)">
+    <img src="images/gameapp1.png" alt="GameApp">
+    <div class="project-info">
+      <h3>GameApp</h3>
+      <p>Interactive quiz and challenge game built with modern UI and animations.</p>
+      <div class="stack-icons">
+        <i class="devicon-react-original colored"></i>
+      </div>
+    </div>
+  </div>-->
+</div>
+
+
 			<div id="projectModal" class="modal">
 				<span class="close" onclick="closeProject()">&times;</span>
 				<div class="modal-content">
@@ -840,85 +956,164 @@
 				transform: scale(1);
 			}
 		}
+		.stack-icons {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: #00bfff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stack-icons i {
+  transition: transform 0.2s, color 0.2s;
+}
+
+.stack-icons i:hover {
+  transform: scale(1.2);
+  
+}
 	</style>
 	<script>
-  const projects = [
-    {
-      title: "INAPI Platform",
-      description:
-        "A complete system for managing patent and trademark submissions. Built with Laravel & Vue.js to handle data securely and efficiently.",
-      images: ["images/inapi1.png", "images/inapi3.png", "images/inapi4.png"]
-    },
-    {
-      title: "IP Collaboration",
-      description:
-        "Collaborative workspace for IP specialists allowing real-time document sharing and project tracking.",
-      images: ["images/ip-collab.png", "images/ipcollab2.png", "images/ipcollab3.png"]
-    },
-    {
-      title: "Hattaa E-commerce",
-      description:
-        "A robust e-commerce platform focused on bulk product lots, featuring seller dashboards, invoices, and order management.",
-      images: ["images/hattaa.png", "images/hattaa2.png", "images/hattaa3.png"]
-    },
-    {
-      title: "Barreau Portal",
-      description:
-        "Professional management portal for lawyers to track their cases, schedule meetings, and interact securely with clients.",
-      images: ["images/barreau1.png", "images/barreau2.png"]
-    },
-    {
-      title: "Inifinimed",
-      description:
-        "Digital health platform with doctor directories, online consultations, and appointment scheduling.",
-      images: ["images/inifinimed.png"]
-    },
-    {
-      title: "Kachma App",
-      description:
-        "A mobile-friendly platform connecting small sellers and buyers locally, with a focus on Algerian markets.",
-      images: ["images/kachma.png", "images/kachma2.png"]
-    },
-    {
-      title: "GameApp",
-      description:
-        "A fun and engaging quiz game featuring levels, score tracking, and animated UI built with React.",
-      images: ["images/gameapp1.png", "images/gameapp2.png"]
-    }
-  ];
+const techIcons = {
+  "Laravel": '<i class="devicon-laravel-plain colored" title="Laravel"></i>',
+  "Vue.js": '<i class="devicon-vuejs-plain colored" title="Vue.js"></i>',
+  "MySQL": '<i class="devicon-mysql-plain " title="MySQL"></i>',
+  "Prestashop": '<i class="devicon-prestashop-original " title="PrestaShop"></i>',
+  "SYMFONY": '<i class="devicon-symfony-original " title="Symfony"></i>',
+  "WordPress": '<i class="devicon-wordpress-plain " title="WordPress"></i>',
+  "React": '<i class="devicon-react-original colored" title="React"></i>',
+  "spring-boot": '<i class="devicon-spring-plain colored" title="Spring Boot"></i>',
+  "angular": '<i class="devicon-angular-plain colored" title="Angular"></i>',
+  "postgreSQL": '<i class="devicon-postgresql-plain " title="PostgreSQL"></i>',
+  "kafka": '<i class="devicon-apachekafka-original " title="Kafka"></i>'
+};
 
-  let currentProjectIndex = 0;
-  let currentSlideIndex = 0;
 
-  function openProject(index) {
-    currentProjectIndex = index - 1;
-    currentSlideIndex = 0;
-
-    const project = projects[currentProjectIndex];
-    document.getElementById("modalTitle").innerText = project.title;
-    document.getElementById("modalDescription").innerText = project.description;
-    document.getElementById("modalImage").src = project.images[currentSlideIndex];
-    document.getElementById("projectModal").style.display = "block";
+const projects = [
+  {
+    title: "INAPI Platform",
+    description:
+      "A complete system for managing patent and trademark submissions. Built with Laravel & Vue.js to handle data securely and efficiently.",
+    images: ["images/inapi1.png", "images/inapi3.png", "images/inapi4.png"],
+    stack: ["Laravel", "Vue.js", "MySQL"]
+  },
+  {
+    title: "IP Collaboration",
+    description:
+      "Collaborative workspace for IP specialists allowing real-time document sharing and project tracking.",
+    images: ["images/ip-collab.png", "images/ipcollab2.png", "images/ipcollab3.png"],
+    stack: ["Laravel", "Vue.js", "MySQL"]
+  },
+  {
+    title: "Hattaa E-commerce",
+    description:
+      "A robust e-commerce platform focused on bulk product lots, featuring seller dashboards, invoices, and order management.",
+    images: ["images/hattaa.png", "images/hattaa2.png", "images/hattaa3.png"],
+    stack: ["Prestashop", "SYMFONY", "MySQL"]
+  },
+  {
+    title: "Barreau Portal",
+    description:
+      "Professional management portal for lawyers to track their cases, schedule meetings, and interact securely with clients.",
+    images: ["images/barreau1.png", "images/barreau2.png"],
+    stack: ["Laravel", "Vue.js", "MySQL"]
+  },
+  {
+    title: "Infinimed",
+    description:
+      "Digital health platform with doctor directories, online consultations, and appointment scheduling.",
+    images: ["images/inifinimed.png", "images/infinimed_2.png"],
+    stack: ["Prestashop", "SYMFONY", "MySQL"]
+  },
+  {
+    title: "Kachma website ",
+    description:
+      "Platform to simplify finding an artisan",
+    images: ["images/kachma.png", "images/kachma2.png"],
+    stack: ["Laravel", "MySQL"]
+  },
+  {
+    title: "GameApp",
+    description:
+      "A fun and engaging quiz game featuring levels, score tracking, and animated UI built with React.",
+    images: ["images/gameapp1.png", "images/gameapp2.png"],
+    stack: ["React"]
+  },
+  {
+    title: "Management Projets Innovation",
+    description:
+      "Agency website to manage events for both investors and startups.",
+    images: ["images/mpi_1.png","images/mpi_2.png", "images/mpi_3.png"],
+    stack: ["WordPress"]
+  },
+  {
+    title: "Entreprise Resource Planning",
+    description:
+      "A local ERP to manage company internal operations like employees, clients, projects, invoices, and more.",
+    images: ["images/intranet_1.png","images/intranet_2.png"],
+    stack: ["Laravel", "Vue.js", "MySQL"]
+  },
+  {
+    title: "Port Management System",
+    description:
+      "big solution built with spring boot and angular to manage all port operations like ships, cargos, employees, clients, and more.",
+    images: ["images/pms.png"],
+    stack: ["spring-boot", "angular", "postgreSQL", "kafka"]
   }
+];
 
-  function closeProject() {
-    document.getElementById("projectModal").style.display = "none";
+let currentProjectIndex = 0;
+let currentSlideIndex = 0;
+
+function openProject(index) {
+  currentProjectIndex = index - 1;
+  currentSlideIndex = 0;
+
+  const project = projects[currentProjectIndex];
+  document.getElementById("modalTitle").innerText = project.title;
+  document.getElementById("modalDescription").innerText = project.description;
+  document.getElementById("modalImage").src = project.images[currentSlideIndex];
+
+  // Add stack icons inside modal
+  const stackHTML = project.stack
+    .map((tech) => techIcons[tech] || tech)
+    .join(" ");
+  
+  let stackDiv = document.getElementById("modalStack");
+  if (!stackDiv) {
+    stackDiv = document.createElement("div");
+    stackDiv.id = "modalStack";
+    stackDiv.className = "stack-icons";
+    document.querySelector(".modal-body").appendChild(stackDiv);
   }
+  stackDiv.innerHTML = stackHTML;
 
-  function changeSlide(direction) {
-    const project = projects[currentProjectIndex];
-    currentSlideIndex += direction;
+  document.getElementById("projectModal").style.display = "block";
+}
 
-    if (currentSlideIndex >= project.images.length) currentSlideIndex = 0;
-    if (currentSlideIndex < 0) currentSlideIndex = project.images.length - 1;
+function closeProject() {
+  document.getElementById("projectModal").style.display = "none";
+}
 
-    const image = document.getElementById("modalImage");
-    image.style.opacity = 0;
-    setTimeout(() => {
-      image.src = project.images[currentSlideIndex];
-      image.style.opacity = 1;
-    }, 200);
-  }
+function changeSlide(direction) {
+  const project = projects[currentProjectIndex];
+  currentSlideIndex += direction;
+
+  if (currentSlideIndex >= project.images.length) currentSlideIndex = 0;
+  if (currentSlideIndex < 0) currentSlideIndex = project.images.length - 1;
+
+  const image = document.getElementById("modalImage");
+  image.style.opacity = 0;
+  setTimeout(() => {
+    image.src = project.images[currentSlideIndex];
+    image.style.opacity = 1;
+  }, 200);
+}
+
+// Add stack icons under each project card
+
+
 </script>
 
 	<style>
